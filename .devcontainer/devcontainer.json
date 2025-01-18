@@ -1,0 +1,18 @@
+{
+  "name": "Ultimate Dev Environment",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+  "features": {
+    "python": "latest",
+    "node": "latest",
+    "docker-in-docker": "latest"
+},
+  "postCreateCommand": "pip install openai && npm install && echo 'Environment Ready!'",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "editor.fontSize": 14
+  },
+  "extensions": [
+    "ms-python.python",
+    "esbenp.prettier-vscode"
+  ]
+}
